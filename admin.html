@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Details</title>
+    <link rel="shortcut icon" href="EHB.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1, h2 {
+            color: #FF4B2B; /* Updated color to orange */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            animation: slideIn 1s ease;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+        th {
+            background-color: #FF4B2B;
+            color: white;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .logout-button {
+            padding: 10px 20px;
+            background-color: #FF4B2B;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-button:hover {
+            background-color: #FF4B2B;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>🔖 FestConnect 🔖</h1></center>
+    <h2>Registered Users</h2>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Gender</th>
+            <th>Receive Updates</th>
+            <th>Teammates</th>
+            <th>Teammates Count</th>
+            <th>Accommodation</th>
+            <th>Members Count</th>
+            <th>Action</th>
+        </tr>
+
+    </table><br><br><br>
+    <form action="login.jsp" method="post">
+        <center><button class="logout-button">Logout</button></center>
+    </form>
+</body>
+</html>
